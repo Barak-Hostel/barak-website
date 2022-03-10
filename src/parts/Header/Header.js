@@ -3,6 +3,7 @@ import Nav from "./navbar.module.css";
 import Logo from "./LOGO1.png";
 import Logo2 from "./LOGO2.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [fg, setfg] = useState(0);
@@ -16,36 +17,36 @@ const Header = () => {
             <ul className={fg === 0 ? Nav.NavLinks : Nav.NavLinks2}>
                 <li>
                     {" "}
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     {" "}
-                    <a href="/">Facilities</a>
+                    <Link to="/">Facilities</Link>
                 </li>
                 <li>
                     {" "}
-                    <a href="/">Gallery</a>
+                    <Link to="/">Gallery</Link>
                 </li>
                 <li>
                     {" "}
-                    <a href="/">Hostel map</a>
+                    <Link to="/">Hostel map</Link>
                 </li>
                 <li>
                     {" "}
-                    <a href="/">Contact</a>
+                    <Link to="/">Contact</Link>
                 </li>
                 <li className={Nav.Login2}>
-                    <a href="/">Login</a>
+                    <Link to="/">Login</Link>
                 </li>
             </ul>
             <div className={Nav.Login}>
-                <a href="/">Login</a>
+                <Link to="/">Login</Link>
             </div>
 
             <div
                 className={Nav.burger}
                 onClick={() => {
-                    if (fg == 0) {
+                    if (fg === 0) {
                         setfg(1);
                     } else {
                         setfg(0);
