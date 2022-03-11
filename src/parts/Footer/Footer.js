@@ -11,18 +11,18 @@ const Footer = () => {
     return (
         <div className={footCss.content}>
             <div className={footCss.mainwrapper}>
-                <img src={barakLogo} alt="" className={footCss.barakLogo} />
+                <img src={barakLogo} className={footCss.barakLogo} />
                 <div className={footCss.icons}>
-                    <img src={Barak2} alt="" className={footCss.Barak2} />
+                    <img src={Barak2} className={footCss.Barak2} />
 
                     <div className={footCss.socialmedia}>
                         <Link to="\">
                             {" "}
-                            <img src={facebook} alt="" />
+                            <img src={facebook} />
                         </Link>
                         <Link to="\">
                             {" "}
-                            <img src={instagram} alt="" />
+                            <img src={instagram} />
                         </Link>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                         <h2>Academic Section</h2>
                     </div>
                 </div>
-                <img src={iitgLogo} alt="" className={footCss.iitgLogo} />
+                <img src={iitgLogo} className={footCss.iitgLogo} />
             </div>
             <div className={footCss.bottom}>
                 <ul>
