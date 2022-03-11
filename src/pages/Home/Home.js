@@ -1,12 +1,7 @@
 import React from "react";
-import Achievements from "./Achievements.js";
 
 const Home = () => {
-    return (
-        <div>
-            <Achievements />;
-        </div>
-    );
+    return <div></div>;
 };
 
 export default Home;
