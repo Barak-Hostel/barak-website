@@ -44,7 +44,7 @@
     justify-content: space-between;
     width: 54.36%;
     height: 94px;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .wrapper h1 {

@@ -11,18 +11,16 @@ const Footer = () => {
     return (
         <div className={footCss.content}>
             <div className={footCss.mainwrapper}>
-                <img src={barakLogo} className={footCss.barakLogo} />
+                <img src={barakLogo} alt="Logo" className={footCss.barakLogo} />
                 <div className={footCss.icons}>
-                    <img src={Barak2} className={footCss.Barak2} />
+                    <img src={Barak2} alt="BARAK" className={footCss.Barak2} />
 
                     <div className={footCss.socialmedia}>
                         <Link to="\">
-                            {" "}
-                            <img src={facebook} />
+                            <img alt="Facebook" src={facebook} />
                         </Link>
                         <Link to="\">
-                            {" "}
-                            <img src={instagram} />
+                            <img alt="Instagram" src={instagram} />
                         </Link>
                     </div>
                 </div>
@@ -48,7 +46,7 @@ const Footer = () => {
                         <h2>Academic Section</h2>
                     </div>
                 </div>
-                <img src={iitgLogo} className={footCss.iitgLogo} />
+                <img src={iitgLogo} alt="IITG" className={footCss.iitgLogo} />
             </div>
             <div className={footCss.bottom}>
                 <ul>
@@ -61,7 +59,6 @@ const Footer = () => {
                     </li>
                     <li className={footCss.dash}>|</li>
                     <li>
-                        {" "}
                         <Link to="/">Privacy </Link>
                     </li>
                     <li className={footCss.dash}>|</li>
@@ -71,7 +68,6 @@ const Footer = () => {
                     </li>
                     <li className={footCss.dash}>|</li>
                     <li>
-                        {" "}
                         <Link to="/">Contact Us</Link>
                     </li>
                 </ul>
