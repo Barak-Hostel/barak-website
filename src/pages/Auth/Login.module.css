@@ -48,17 +48,17 @@
     display: block;
     margin: 0 auto;
 }
-.checkbox {
-    height: 12px;
-    width: 12px;
-    margin: 2px;
-}
 .remember {
     float: left;
 }
 .forgotpass {
     float: right;
     cursor: pointer;
+}
+.checkbox {
+    height: 12px;
+    width: 12px;
+    margin: 2px;
 }
 a:link,
 a:visited {
@@ -111,6 +111,13 @@ button {
         font-size: 20px;
     }
 
+    .backArrow {
+        margin-top: 2px;
+        width: 15px;
+        height: 20px;
+        background-size: 100% 100%;
+    }
+
     .inputbox,
     .remember,
     .forgotpass {
@@ -123,12 +130,6 @@ button {
         margin: 2px;
     }
 
-    .backArrow {
-        margin-top: 2px;
-        width: 15px;
-        height: 20px;
-        background-size: 100% 100%;
-    }
     .img {
         height: 30%;
         width: 100%;
