@@ -46,7 +46,6 @@
     list-style: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    pointer-events: none;
 }
 
 .NavLinks2 li {
@@ -121,7 +120,7 @@
         width: 100%;
         background-color: #f5f4f4;
         position: absolute;
-        top: 75px;
+        top: 65px;
         right: 0;
         z-index: 2;
         text-align: right;
@@ -161,5 +160,32 @@
         -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
         -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5); */
+    }
+}
+@media screen and (max-width: 400px) {
+    .NavLinks2 {
+        top: 54px;
+    }
+    .Title {
+        padding: 0;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 3%;
+    }
+    .Logo1 {
+        width: 60%;
+        padding-bottom: 0;
+        padding-left: 6px;
+    }
+    .Logo2 {
+        width: 22%;
+    }
+    .burger {
+        margin-right: 3%;
+    }
+    .NavBar {
+        height: 49px;
     }
 }
