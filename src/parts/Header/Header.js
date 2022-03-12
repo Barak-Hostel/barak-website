@@ -11,8 +11,8 @@ const Header = () => {
         <div className={Nav.NavBar}>
             <div className={Nav.Title}>
                 {" "}
-                <img src={Logo2} alt="" />
-                <img src={Logo} alt="" className={Nav.Logo1} />{" "}
+                <img src={Logo2} alt="Logo1" className={Nav.Logo2} />
+                <img src={Logo} alt="Logo2" className={Nav.Logo1} />{" "}
             </div>
             <ul className={fg === 0 ? Nav.NavLinks : Nav.NavLinks2}>
                 <li>
