@@ -48,7 +48,11 @@
     display: block;
     margin: 0 auto;
 }
-
+.checkbox {
+    height: 12px;
+    width: 12px;
+    margin: 2px;
+}
 .remember {
     float: left;
 }
@@ -106,15 +110,19 @@ button {
     h1 {
         font-size: 20px;
     }
-    .inputbox {
-        font-size: 10px;
-    }
-    .remember {
-        font-size: 10px;
-    }
+
+    .inputbox,
+    .remember,
     .forgotpass {
         font-size: 10px;
     }
+
+    .checkbox {
+        height: 8px;
+        width: 8px;
+        margin: 2px;
+    }
+
     .backArrow {
         margin-top: 2px;
         width: 15px;
@@ -132,6 +140,15 @@ button {
     .options {
         width: 80%;
         padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    .form_input .login_heading {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+@media only screen and (max-height: 600px) {
+    .container {
+        height: 500px;
     }
 }

@@ -30,13 +30,14 @@ const Login = () => {
 
                     <div className={styles.options}>
                         <div className={styles.remember}>
-                            <input
-                                className={styles.checkbox}
-                                type="checkbox"
-                                value="#"
-                                id="remember"
-                            ></input>
-                            <label for="remember">Remember me</label>
+                            <label>
+                                <input
+                                    className={styles.checkbox}
+                                    type="checkbox"
+                                    value="#"
+                                ></input>
+                                Remember me
+                            </label>
                         </div>
 
                         <div
