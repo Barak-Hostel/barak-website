@@ -36,11 +36,11 @@ const Header = () => {
                     <Link to="/">Contact</Link>
                 </li>
                 <li className={Nav.Login2}>
-                    <Link to="/">Login</Link>
+                    <Link to="/login">Login</Link>
                 </li>
             </ul>
             <div className={Nav.Login}>
-                <Link to="/">Login</Link>
+                <Link to="/login">Login</Link>
             </div>
 
             <div
