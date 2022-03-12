@@ -74,7 +74,7 @@ button {
     border: none;
     color: #ffff;
     background-color: #000;
-    font-size: 15px;
+    font-size: 16px;
     padding: 12px;
     margin: 10px;
 
@@ -106,9 +106,12 @@ button {
 .btn_rst_link {
     margin-top: 40px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
+    .auth_card {
+        height: 92%;
+    }
     h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .backArrow {
@@ -121,12 +124,14 @@ button {
     .inputbox,
     .remember,
     .forgotpass {
-        font-size: 10px;
+        font-size: 14px;
     }
-
+    .forgotpass {
+        float: right;
+    }
     .checkbox {
-        height: 8px;
-        width: 8px;
+        height: 12px;
+        width: 12px;
         margin: 2px;
     }
 
@@ -148,7 +153,38 @@ button {
         margin-bottom: 5%;
     }
 }
-@media only screen and (max-height: 600px) {
+@media only screen and (max-width: 1077px) {
+    @media only screen and (min-width: 722px) {
+        .options {
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .forgotpass {
+            padding-top: 9px;
+            padding-bottom: 20px;
+            float: none;
+        }
+        .remember {
+            float: none;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .options {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .remember {
+        float: none;
+    }
+    .forgotpass {
+        margin-top: 9px;
+        float: none;
+    }
+}
+@media only screen and (max-height: 720px) {
     .container {
         height: 500px;
     }
