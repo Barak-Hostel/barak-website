@@ -12,22 +12,17 @@ const Achievements = () => {
             <div className={achieve.gridContainer}>
                 <div className={achieve.wrapper}>
                     <img src={image1} alt="Photo1" />
-                    <div className={achieve.text}>
-                        <div className={achieve.heading}>
-                            Winners of Interhostel Tournament
-                        </div>
-
-                        <div className={achieve.des}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            do.
-                        </div>
+                    <div className={achieve.heading}>
+                        Winners of Interhostel Tournament
+                    </div>
+                    <div className={achieve.des}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et do.
                     </div>
                 </div>
 
                 <div className={achieve.wrapper}>
                     <img src={image2} alt="Photo2" />
-
                     <div className={achieve.heading}>
                         Winners of Interhostel Tournament
                     </div>
