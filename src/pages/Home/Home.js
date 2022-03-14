@@ -1,6 +1,6 @@
 import React from "react";
 import Achievements from "./Achievements/Achievements";
-
+import About from "./About us/About.js"
 const Home = () => {
     return (
         <React.Fragment>
@@ -19,6 +19,7 @@ const Home = () => {
             cumque ea soluta quisquam sit totam in commodi provident ad saepe.
             Fugit praesentium, repellendus animi, harum delectus, ducimus
             aperiam eos dolorum tenetur non maiores eligendi.
+            <About/>
             <Achievements />
             <h1>Hi</h1>
         </React.Fragment>
