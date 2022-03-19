@@ -1,5 +1,4 @@
 import Gym from "./gym.module.css";
-import backgroundImage from "./gymImage.png";
 import { Link } from "react-router-dom";
 
 const gym = () => {
