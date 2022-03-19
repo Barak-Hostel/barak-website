@@ -5,13 +5,15 @@
 }
 
 .NavBar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: 100%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: #f5f4f4;
     box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.25);
 }
@@ -120,7 +122,7 @@
         width: 100%;
         background-color: #f5f4f4;
         position: absolute;
-        top: 65px;
+        top: 62px;
         right: 0;
         z-index: 2;
         text-align: right;
@@ -164,7 +166,7 @@
 }
 @media screen and (max-width: 400px) {
     .NavLinks2 {
-        top: 54px;
+        top: 52px;
     }
     .Title {
         padding: 0;
