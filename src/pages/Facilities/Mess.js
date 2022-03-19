@@ -1,5 +1,5 @@
 import Mess from "./mess.module.css";
-
+import { Link } from "react-router-dom";
 const mess = () => {
     return (
         <div className={Mess.content}>
@@ -19,7 +19,7 @@ const mess = () => {
                 </div>
                 <div className={Mess.bookButtom}>
                     {" "}
-                    <a href="/"> FEEDBACK</a>
+                    <Link to="/"> FEEDBACK</Link>
                 </div>
             </div>
         </div>

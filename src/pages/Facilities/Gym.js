@@ -1,5 +1,6 @@
 import Gym from "./gym.module.css";
 import backgroundImage from "./gymImage.png";
+import { Link } from "react-router-dom";
 
 const gym = () => {
     return (
@@ -16,7 +17,7 @@ const gym = () => {
             </p>
             <button className={Gym.bookButtom}>
                 {" "}
-                <a href="/"> BOOK YOUR SLOT </a>
+                <Link to="/"> BOOK YOUR SLOT </Link>
             </button>
         </div>
     );
