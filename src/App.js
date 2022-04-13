@@ -1,5 +1,6 @@
 import Home from "./pages/Home/Home";
 import Login from "./pages/Auth/Login";
+import Gallery from "./pages/Gallery/Gallery";
 import Header from "./parts/Header/Header";
 import Footer from "./parts/Footer/Footer";
 import Facilities from "./pages/Facilities/Facilities";
@@ -15,6 +16,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/gallery" element={<Gallery />} />
                     <Route path="/facilities" element={<Facilities />} />
                 </Routes>
                 <Footer />
