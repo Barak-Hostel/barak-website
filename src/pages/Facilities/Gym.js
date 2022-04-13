@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const gym = () => {
     return (
         <div className={Gym.content}>
-            
             <h1 className={Gym.header}>Gym and Sports</h1>
             <p>
                 Barak is the 7th hostel in the IITG fraternity and derives its
@@ -16,7 +15,7 @@ const gym = () => {
             </p>
             <button className={Gym.bookButtom}>
                 {" "}
-                <Link to="/"> BOOK YOUR SLOT </Link>
+                <Link to="/slot-booking"> BOOK YOUR SLOT </Link>
             </button>
         </div>
     );
