@@ -25,7 +25,7 @@ const Header = () => {
                 </li>
                 <li>
                     {" "}
-                    <Link to="/">Gallery</Link>
+                    <Link to="/gallery">Gallery</Link>
                 </li>
                 <li>
                     {" "}
