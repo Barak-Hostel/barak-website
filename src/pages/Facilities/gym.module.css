@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap");
+
+.header {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 4.2361111111vw;
+    line-height: 5.1388888889vw ;
+    letter-spacing: -0.015em;
+    padding-top: 17.0138888889%;
+    padding-left: 14.5833333333%;
+    
+}
+.content {
+    width: 100%;
+    height: 53.889vw;
+    background-image: url("gymImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1111111111vw;
+    line-height: 1.3888888889vw;
+    letter-spacing: 0.005em;
+    padding-left: 14.5833333333%;
+    padding-top: 1.3194444444%;
+    padding-right: 53.5416666667%;
+}
+a{
+    margin: 0;
+    padding: 0s;
+}
+
+.bookButtom {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2.0833333333%;
+    margin-left: 14.5833333333%;
+    height: 4.0277777778vw;
+    width: 24.6527777778%;
+    padding: 0%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookButtom a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1111111111vw;
+    /* line-height: 1.3888888889vw; */
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    /* padding: 1.3888888889% 7.0833333333%; */
+    color: white;
+}
