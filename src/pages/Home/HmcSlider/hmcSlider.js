@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slideStyle from "./slider.module.css";
 import Slider from "react-slick";
-import slider from "react-slick/lib/slider";
+
 import leftAr from "./leftA.svg";
 import rightAr from "./rightA.svg";
 
