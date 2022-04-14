@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slideStyle from "./slider.module.css";
@@ -53,8 +52,8 @@ export default function Hmc() {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1,
-        beforeChange: (current, next) => setSlideIndex(next),
+        slidesToScroll: 2,
+
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -86,8 +85,6 @@ export default function Hmc() {
             },
         ],
     };
-
-    const [slideIndex, setSlideIndex] = useState(0);
 
     return (
         <div>
