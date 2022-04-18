@@ -6,7 +6,7 @@
 .fullcontainer {
     background-color: black;
     height: 65%;
-    max-width: min(750px, 60%);
+    max-width: min(840px, 60%);
     display: flex;
     flex-direction: row;
     box-shadow: 0px 0px 16px 3px #00000014;
@@ -39,7 +39,7 @@
 
 .heading {
     text-align: center;
-    font-size: 2.1em;
+    font-size: 2em;
     margin-bottom: 0.7em;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
@@ -62,6 +62,7 @@
     width: 90%;
     margin-bottom: 17px;
     border-radius: 2px;
+    font-size: 13.2px;
 }
 .timeinputbox {
     width: 100%;
@@ -100,7 +101,7 @@
     background-color: #000000; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 25px;
     width: 90%;
     text-decoration: none;
     display: inline-block;
@@ -126,7 +127,7 @@
     width: 70%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 960px) {
     .fullcontainer {
         flex-direction: column;
     }
@@ -155,7 +156,6 @@
         backdrop-filter: blur(5px);
     }
     .confirmedup {
-        /* color: rgb(23, 252, 3); */
         outline: white;
         background-color: white;
         backdrop-filter: blur(10px);
@@ -168,24 +168,42 @@
 
 @media only screen and (max-width: 700px) {
     .fullcontainer {
-        max-width: 70%;
+        max-width: 65%;
     }
-}
-
-@media only screen and (max-width: 580px) {
     .textcontainer {
-        width: 85%;
-    }
-    .heading {
-        font-size: 1.8em;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .fullcontainer {
-        max-width: 85%;
+        width: 80%;
     }
     .textcontainer button {
-        padding: 15px 25px;
+        font-size: 14.75px;
+    }
+    .textcontainer input {
+        font-size: 12.5px;
+    }
+    .heading {
+        font-size: 1.7em;
+    }
+    .confirmedup {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .fullcontainer {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .textcontainer button {
+        font-size: 14px;
+    }
+    .textcontainer input {
+        font-size: 12.25px;
+    }
+    .heading {
+        font-size: 1.6em;
+    }
+    .confirmedup {
+        font-size: 26px;
     }
 }
