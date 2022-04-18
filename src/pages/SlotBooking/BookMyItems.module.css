@@ -4,19 +4,17 @@
     box-sizing: border-box;
 }
 .fullcontainer {
-    background-color: black;
     height: 65%;
     max-width: min(900px, 65%);
     display: flex;
     flex-direction: row;
     box-shadow: 0px 0px 16px 3px #00000014;
     min-height: 500px;
-    margin: 140px auto;
+    margin: 140px auto 75px;
 }
 
 .leftcontainer {
     width: 47%;
-    background-color: green;
     background-image: url("./TT.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,16 +22,14 @@
 
 .rightcontainer {
     width: 57%;
-    background: #f5f4f4;
+    /* background: #f5f4f4; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .textcontainer {
-    /* margin-top: 3em; */
     width: 72%;
-    /* height: 80%; */
     text-align: center;
 }
 
@@ -55,7 +51,7 @@
 }
 
 .textcontainer input {
-    background-color: #f5f4f4;
+    /* background-color: #f5f4f4; */
     border: 1px solid #929292;
     padding: 12px 10px;
     height: 3.5em;
@@ -98,7 +94,7 @@
 }
 
 .textcontainer button {
-    background-color: #000000; /* Green */
+    background-color: #000000;
     border: none;
     color: white;
     padding: 15px 25px;
