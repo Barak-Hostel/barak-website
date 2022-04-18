@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  }
+  .main{
+    max-width: 100%;
+    height: auto;
+  }
+  .child_2{
+    position: relative;
+  }
+  .arrow{
+    left: 50%;
+    top: 0;
+    position: absolute;
+    transform: translate(-50%, -100%);
+  
+  }
+  
+  
+  
+  
