@@ -57,7 +57,7 @@ export default function Hmc() {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 1235,
+                breakpoint: 1250,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
