@@ -6,6 +6,7 @@ import CC from "./Canteen.js";
 const Facilities = () => {
     return (
         <div>
+            <div style={{ width: "100%", height: "52px" }}></div>
             <GG />
             <MM />
             <TR />
