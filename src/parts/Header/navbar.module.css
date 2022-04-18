@@ -122,12 +122,14 @@
         width: 100%;
         background-color: #f5f4f4;
         position: absolute;
-        top: 62px;
+        /* display: block;
+        margin-top: 230px; */
+        top: 59px;
         right: 0;
-        z-index: 2;
+        z-index: 200;
         text-align: right;
         padding-right: 10px;
-
+        
         pointer-events: all;
 
         border-bottom-right-radius: 1%;
@@ -166,28 +168,30 @@
 }
 @media screen and (max-width: 400px) {
     .NavLinks2 {
-        top: 52px;
+        top: 62px;
+        
     }
     .Title {
         padding: 0;
-        width: 55%;
+        
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         margin-left: 3%;
     }
     .Logo1 {
-        width: 60%;
-        padding-bottom: 0;
-        padding-left: 6px;
+        
+        padding-bottom: 5px;
     }
     .Logo2 {
-        width: 22%;
+        
+        margin-top: 0;
+        padding-bottom: 5px;
     }
     .burger {
         margin-right: 3%;
     }
     .NavBar {
-        height: 49px;
+        height: 63px;
     }
 }
