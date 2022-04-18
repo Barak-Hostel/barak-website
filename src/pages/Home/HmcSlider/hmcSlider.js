@@ -57,7 +57,7 @@ export default function Hmc() {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 1250,
+                breakpoint: 1350,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -87,7 +87,7 @@ export default function Hmc() {
 
     return (
         <div>
-            <h1 className={slideStyle.title}>HMC Members</h1>;
+            <h1 className={slideStyle.title}>HMC Members</h1>
             <Slider {...settings} className={slideStyle.content}>
                 {images.map((img, index) => (
                     <div className={slideStyle.slide} key={img}>
