@@ -1,203 +1,191 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.fullcontainer{
+.fullcontainer {
     background-color: black;
-    height:65%;
-    /* height: 65%; */
-    width:47%;
+    height: 65%;
+    max-width: min(750px, 60%);
     display: flex;
     flex-direction: row;
-    /* background: #A9A9A9; */
-    /* box-shadow:10px 10px 10px 10px #A9A9A9 ; */
-     box-shadow: 0px 0px 16px 3px #00000014;
-     min-height: 500px;
-     margin: 140px auto;
-
- }
- 
- .leftcontainer{
-     /* width:46.43%; */
-     width:47%;
-     /* height:100%; */
-     background-color: green;
-   background-image: url('./TT.png');
-   background-repeat: no-repeat;
-   background-size: cover;
+    box-shadow: 0px 0px 16px 3px #00000014;
+    min-height: 500px;
+    margin: 140px auto;
 }
 
- .rightcontainer{
-     width:57%;
-     /* height:100%; */
-     background: #F5F4F4;
-     /* text-align: center; */
-     display: flex;
-     flex-direction: column;
+.leftcontainer {
+    width: 47%;
+    background-color: green;
+    background-image: url("./TT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightcontainer {
+    width: 57%;
+    background: #f5f4f4;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.textcontainer{
-    margin-top: 3em;
-     width:72%;
-     height:80%;
-     /* border:2px solid white; */
-     text-align: center;
-    }
-    
-    .heading{
-        text-align: center;
-        font-size: 2.1em;
-        margin-bottom: 0.7em;
-        font-weight: 600;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    
-    /* font-family: Montserrat;
-    font-size: 45px;
-    font-weight: 600;
- line-height: 55px;
- letter-spacing: -0.015em;
- text-align: left; */
- 
- .inputbox{
-     width:100%;
-     /* margin:1rem; */
-    }
-    .textcontainer input{
-        background-color: #F5F4F4;
-     border: 1px solid #929292;
-   padding: 12px 10px;
-   height:3.5em;
-   width:90%;
-   margin-bottom: 17px;
-   border-radius: 2px;
+.textcontainer {
+    /* margin-top: 3em; */
+    width: 72%;
+    /* height: 80%; */
+    text-align: center;
 }
-.timeinputbox{
-    width:100%;
-    padding: 12px 10px;
-    margin:2px;
-}
-/* .textcontainer input[type="date"]{
-    
-} */
 
-.datecontainer,.timecontainer{
+.heading {
+    text-align: center;
+    font-size: 2.1em;
+    margin-bottom: 0.7em;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form {
+    font-family: "Montserrat", sans-serif;
+}
+
+.inputbox {
+    width: 100%;
+    font-family: inherit;
+}
+
+.textcontainer input {
+    background-color: #f5f4f4;
+    border: 1px solid #929292;
+    padding: 12px 10px;
+    height: 3.5em;
+    width: 90%;
+    margin-bottom: 17px;
+    border-radius: 2px;
+}
+.timeinputbox {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 2px;
+}
+
+.datecontainer,
+.timecontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-     height: fit-content;
-     padding:  0;
-     margin: 0;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.calendar,
+.time {
+    background-image: url("./calendar.png");
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 8%;
+    top: 23%;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+}
+.time {
+    background-image: url("./clock.png");
+}
+
+.textcontainer button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    width: 90%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: inherit;
+}
+.confirmedup {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.015em;
+    text-align: center;
+}
+.confirmeddown {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #837d7d;
+    width: 70%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .fullcontainer {
+        flex-direction: column;
     }
- .calendar,.time{
-     background-image: url('./calendar.png');
-     background-size: cover;
-     height: 20px;
-     width: 20px;
-     position: absolute;
-     right:8%;
-     top:23%;
-     pointer-events: none;
-     padding: 0;
-     margin: 0;
-     
+    .leftcontainer,
+    .rightcontainer {
+        width: 100%;
     }
-    .time{
-        background-image: url('./clock.png');
- 
+    .leftcontainer {
+        height: 0;
+        filter: blur(4px);
+        display: none;
     }
-    
-    .textcontainer button{
-     background-color: #000000; /* Green */
-     border: none;
-     color: white;
-     padding: 15px 32px;
-     width: 90%;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
-     margin-top: 15px;
+    .heading {
+        color: white;
     }
-    .confirmedup{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 44px;
-        letter-spacing: -0.015em;
-        text-align: center;
-        
+    .rightcontainer {
+        height: 100%;
+        min-height: 500px;
+
+        background-image: url("./TT.png");
+        background-size: cover;
+        background-position: center;
+        -webkit-backdrop-filter: blur(
+            5px
+        ); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+        backdrop-filter: blur(5px);
     }
-    .confirmeddown{
-     font-family: 'Montserrat', sans-serif;
-     font-size: 16px;
-     /* font-weight: 100; */
-     line-height: 20px;
-     letter-spacing: 0.005em;
-     text-align: left;
-     color: #837d7d;
-     width: 70%;
+    .confirmedup {
+        /* color: rgb(23, 252, 3); */
+        outline: white;
+        background-color: white;
+        backdrop-filter: blur(10px);
     }
-    
-    @media only screen and (max-width: 1533px)  {
-        .heading{
-            font-size: 1.3em;
-        }
-        .textcontainer{
-            margin-top: 1px;
-        }
-        .leftcontainer{
-            background-size: cover;
-     }
-     .fullcontainer{
-         height:50%;
-        }
+    .confirmeddown {
+        color: white;
+        font-weight: 400;
     }
- @media only screen and (max-width: 1150px){
-     .fullcontainer{
-         flex-direction: column;
-        }
-        .leftcontainer,.rightcontainer{
-            width:100%;
-        }
-        .leftcontainer{
-            height:0;
-            filter: blur(4px);
-            display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .fullcontainer {
+        max-width: 70%;
     }
-    .heading{
-        color:white;
+}
+
+@media only screen and (max-width: 580px) {
+    .textcontainer {
+        width: 85%;
     }
-    .rightcontainer{
-        height:100%;
-     min-height: 500px;
-     
-     background-image: url('./TT.png');
-     background-size: cover;
-     background-position: center;
-     -webkit-backdrop-filter: blur(5px); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
-     backdrop-filter: blur(5px); 
-     /* filter: blur(8px);
-     -webkit-filter: blur(8px); */
-     }
-    .confirmedup{
-         /* text-align:left; */
-         color:rgb(23, 252, 3);
-         outline:white;
-         background-color:white;
-         backdrop-filter:blur(10px)
-        }
-    .confirmeddown{
-        color:white;
-        font-weight:400;
+    .heading {
+        font-size: 1.8em;
     }
+}
+
+@media only screen and (max-width: 375px) {
+    .fullcontainer {
+        max-width: 85%;
     }
-    
- @media only screen and (max-width: 549px){
-     .textcontainer{
-         width:100%;
-        }
- } 
+    .textcontainer button {
+        padding: 15px 25px;
+    }
+}
