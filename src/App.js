@@ -1,5 +1,6 @@
 import Home from "./pages/Home/Home";
-import Login from "./pages/Auth/Login";
+// import Login from "./pages/Auth/Login";
+import Login2 from "./pages/Auth/Login2";
 import Gallery from "./pages/Gallery/Gallery";
 import Header from "./parts/Header/Header";
 import Footer from "./parts/Footer/Footer";
@@ -16,7 +17,7 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/login" element={<Login2 />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/facilities" element={<Facilities />} />
                     <Route path="/slot-booking" element={<SlotBooking />} />
