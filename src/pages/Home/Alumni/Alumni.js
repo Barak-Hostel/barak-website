@@ -16,62 +16,62 @@ function Alumni() {
      <p className={alumnistyles.mainheading}>Alumni</p>
      <div className={alumnistyles.parentdiv}>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage} src={image1}/>
+             <img className={alumnistyles.alumimage} alt="image1" src={image1}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image2}/>
+             <img className={alumnistyles.alumimage} alt="image2"  src={image2}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image3}/>
+             <img className={alumnistyles.alumimage} alt="image3"   src={image3}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image4}/>
+             <img className={alumnistyles.alumimage} alt="image4"  src={image4}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image5}/>
+             <img className={alumnistyles.alumimage}  alt="image5" src={image5}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image6}/>
+             <img className={alumnistyles.alumimage}  alt="image6" src={image6}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image1}/>
+             <img className={alumnistyles.alumimage}  alt="image7" src={image7}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
 
          <div className={alumnistyles.card}>
-             <img className={alumnistyles.alumimage}  src={image7}/>
+             <img className={alumnistyles.alumimage}   alt="image8" src={image1}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img  className={alumnistyles.alumimage} src={image8}/>
+             <img  className={alumnistyles.alumimage}  alt="image9" src={image8}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
          </div>
          <div className={alumnistyles.card}>
-             <img  className={alumnistyles.alumimage} src={image9}/>
+             <img  className={alumnistyles.alumimage} alt="image10" src={image9}/>
              <p className={alumnistyles.alumname}>Name 1</p>
              <p className={alumnistyles.alumpost}>Post 1</p>
              <p className={alumnistyles.alumbatch}>Batch 1</p>
