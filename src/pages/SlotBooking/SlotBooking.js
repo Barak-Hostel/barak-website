@@ -4,7 +4,7 @@ import bookmyitemsstyles from "./BookMyItems.module.css";
 function SlotBooking() {
     const handleSubmit = (e) => {
         // e.prevent.default()
-        console.log("reached inside this !!!");
+        // console.log("reached inside this !!!");
         setdisplay(DisplaySecond);
     };
 
