@@ -10,7 +10,7 @@
     letter-spacing: -0.015em;
     padding-top: 17.0138888889%;
     padding-left: 14.5833333333%;
-    margin-top: 1.3888888889%;
+    margin-top: 0.7%;
 }
 .content {
     width: 100%;
@@ -49,6 +49,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: black;
+    border: none;
 }
 
 .bookButtom a {
