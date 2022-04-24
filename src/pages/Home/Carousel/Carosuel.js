@@ -1,11 +1,11 @@
 import React from "react";
 import carosuel from "./carosuel.module.css";
-import image1 from "./arrow.svg";
-import image2 from "./main.svg";
+import main from "./images/main.svg";
+
 function Carosuel() {
   return (
     <div className={carosuel.child}>
-      <img className={carosuel.main} src={image2} alt="" />
+      <img className={carosuel.main} src={main} alt="" />
     </div>
   );
 }
