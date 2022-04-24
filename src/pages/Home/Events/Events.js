@@ -12,7 +12,7 @@ const Events = () => {
       <div className={events["heading"]}>Events</div>
       <div className={events["row1"]}>
         <div className={events["column1"]}>
-          <img src={heading} alt="heading" className="img1" />
+          <img src={heading} alt="heading" className={events["img1"]} />
         </div>
         <div className={events["column1"]}>
           <div className={events["subheading"]}>
@@ -29,18 +29,10 @@ const Events = () => {
 
       <div className={events["row2"]}>
         {images.map((img, index) => (
-          <div className="column2" key={index}>
-            <img src={img} alt={alts[index]} className="img2" />
+          <div className={events["column2"]} key={index}>
+            <img src={img} alt={alts[index]} className={events["img2"]} />
           </div>
         ))}
-
-        {/* <div className="column2">
-            <img src="./images/chess.svg" alt="chess" className="img2" />
-          </div>
-
-          <div className="column2">
-            <img src="./images/music.svg" alt="music" className="img2" />
-          </div> */}
       </div>
     </div>
   );

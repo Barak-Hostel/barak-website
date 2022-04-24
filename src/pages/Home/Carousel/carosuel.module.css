@@ -3,19 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
-  }
-  .main{
+}
+.main {
     max-width: 100%;
-    height: auto;
-  }
-  .child_2{
+    width: 100vw;
+    object-fit: cover;
+}
+.child_2 {
     position: relative;
-  }
-  .child{
-    margin-top: 55px;
-  }
- 
-  
-  
-  
-  
+}

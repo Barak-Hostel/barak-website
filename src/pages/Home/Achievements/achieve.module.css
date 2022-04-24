@@ -1,6 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"); */
 .content {
     background-color: black;
     width: 100%;
@@ -12,13 +9,13 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 4vw; /* vw is the solution to all our problems*/
+    font-size: max(35px, 4.25vw);
     line-height: 73px;
     letter-spacing: -0.015em;
     padding-top: 4%;
     padding-bottom: 4%;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
 }
 
 .gridContainer {
@@ -31,10 +28,8 @@
 .heading {
     font-family: "Montserrat", sans-serif;
     font-size: max(15px, 1.25vw);
-    /* text-align: center; */
     font-weight: 700;
     margin: 15px 0 10px;
-    /* width: 80%; */
 }
 
 .des {
@@ -55,20 +50,11 @@
     padding: 0 2.0263901979%;
 }
 
-@media screen and (max-width: 650px) {
-    /* .content {
-        height: 1380px;
-    } */
+@media screen and (max-width: 850px) {
     .content h1 {
-        font-size: 6.2vw;
         padding-top: 35px;
         padding-bottom: 35px;
     }
-    /* .content {
-        font-size: 1em;
-        height: 1500px;
-    } */
-
     .wrapper img {
         width: 85%;
         align-items: center;
@@ -76,8 +62,6 @@
     .heading {
         text-align: center;
         padding-left: 0;
-        /* width: 160px; */
-        /* font-size: 1.8vh; */
     }
     .gridContainer {
         flex-direction: column;
@@ -90,20 +74,7 @@
         padding-bottom: 48px;
     }
     .des {
-        /* width: 177px; */
         width: 80%;
         text-align: center;
-        /* font-size: 1.4vh; */
     }
 }
-
-/* @media screen and (max-width: 400px) {
-    .content {
-        height: 1300px;
-    }
-}
-@media screen and (max-width: 350px) {
-    .content {
-        height: 1220px;
-    }
-} */

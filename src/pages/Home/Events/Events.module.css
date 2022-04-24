@@ -3,26 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
-  }
-  .main-container {
+}
+.main-container {
     display: flex;
     flex-direction: column;
-    padding: 20px max(4vw, 20px);
+    padding: 30px max(4vw, 30px);
     background: black;
     color: white;
-  }
-  .heading {
+}
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: max(32px, 4.5vw);
+    font-size: max(35px, 4.25vw);
     margin-bottom: 10px;
-  }
-  .row1 {
+}
+.row1 {
     display: flex;
     gap: 5px;
-  }
-  .column1 {
+}
+.column1 {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
@@ -30,44 +30,43 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-  }
-  .img1 {
+}
+.img1 {
     width: 100%;
-  }
-  .right-part {
+}
+.right-part {
     display: flex;
     flex-direction: column;
     max-width: 45%;
-  }
-  .subheading {
-    font-size: max(27px, 3vw);
+}
+.subheading {
+    font-size: max(23px, 3vw);
     margin-bottom: 8px;
-  }
-  .description {
-    font-size: max(15px, 1.2vw);
-  }
-  .row2 {
+}
+.description {
+    font-size: max(13px, 1.2vw);
+}
+.row2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 40px;
     gap: max(20px, 2.5vw);
-  }
-  .img2 {
+}
+.img2 {
     width: 100%;
-  }
-  .column2 {
+}
+.column2 {
     flex-basis: 30%;
     min-width: 300px;
-  }
-  @media screen and (max-width: 790px) {
+}
+@media screen and (max-width: 790px) {
     .row1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .subheading {
-      margin-bottom: 6px;
+        margin-bottom: 6px;
     }
-  }
-  
+}
