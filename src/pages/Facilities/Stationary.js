@@ -4,7 +4,7 @@ import st from "./stationary.module.css";
 const St = () => {
     return (
         <div className={st.content}>
-            <h1 className={st.header}>stationary</h1>
+            <h1 className={st.header}>Stationary</h1>
             <p>
                 Barak is the 7th hostel in the IITG fraternity and derives its
                 name from the River Barak which is a major river in
