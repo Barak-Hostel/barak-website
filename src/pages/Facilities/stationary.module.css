@@ -28,3 +28,29 @@
     padding-top: 2.4305555556%;
     padding-right: 53.5416666667%;
 }
+@media screen and (max-width: 800px) {
+    .content p {
+        font-size: 1.6666666667vw;
+        line-height: 2.0833333334vw;
+        letter-spacing: 0.0075em;
+    }
+    .header {
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .content p {
+        font-size: 2.5vw;
+        line-height: 3vw;
+        letter-spacing: 0.01em;
+        padding-right: 25%;
+        padding-left: 5%;
+    }
+    .header {
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+    .bookButtom a {
+        font-size: 2.5vw;
+    }
+}
