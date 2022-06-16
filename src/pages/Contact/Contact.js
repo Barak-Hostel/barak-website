@@ -65,7 +65,10 @@ function Contact() {
     return (
         <div className={style.fullcontainer}>
             <div className={style.leftcontainer}></div>
-            <div className={style.rightcontainer}>{display}</div>
+            <div className={style.rightcontainer}>
+                <div className={style.blurLayer}></div>
+                {display}
+            </div>
         </div>
     );
 }
