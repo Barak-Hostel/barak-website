@@ -1,7 +1,8 @@
 import Gym from "./gym.module.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const gym = () => {
+    const navigate = useNavigate();
     return (
         <div className={Gym.content}>
             <h1 className={Gym.header}>Gym and Sports</h1>
@@ -13,9 +14,15 @@ const gym = () => {
                 Lakhipur. The two time General Championship Winner hostel brings
                 a cheerful environment to all its boarders.
             </p>
-            <button className={Gym.bookButtom}>
+            <button
+                className={Gym.bookButtom}
+                onClick={() => {
+                    navigate("/slot-booking");
+                }}
+                style={{ color: "#fff" }}
+            >
                 {" "}
-                <Link to="/slot-booking"> BOOK YOUR SLOT </Link>
+                BOOK YOUR SLOT
             </button>
         </div>
     );
