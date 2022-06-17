@@ -1,6 +1,5 @@
 import st from "./stationary.module.css";
 
-
 const St = () => {
     return (
         <div className={st.content}>

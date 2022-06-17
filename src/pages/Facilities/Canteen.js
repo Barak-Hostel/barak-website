@@ -1,6 +1,5 @@
 import Canteen from "./canteen.module.css";
 
-
 const cnt = () => {
     return (
         <div className={Canteen.content}>
