@@ -21,7 +21,6 @@ const gym = () => {
                 }}
                 style={{ color: "#fff" }}
             >
-                {" "}
                 BOOK YOUR SLOT
             </button>
         </div>
