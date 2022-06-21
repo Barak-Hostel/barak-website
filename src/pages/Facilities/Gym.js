@@ -13,10 +13,9 @@ const gym = () => {
                 Lakhipur. The two time General Championship Winner hostel brings
                 a cheerful environment to all its boarders.
             </p>
-            <button className={Gym.bookButtom}>
-                {" "}
-                <Link to="/slot-booking"> BOOK YOUR SLOT </Link>
-            </button>
+            <Link to="/slot-booking">
+                <button className={Gym.bookButtom}>BOOK YOUR SLOT</button>
+            </Link>
         </div>
     );
 };
