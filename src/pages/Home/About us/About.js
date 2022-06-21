@@ -4,6 +4,9 @@ import aboutusstyles from './About.module.css'
 
 function About() {
   return (
+    <div
+     className={aboutusstyles.parentaboutwholecontainer}
+    >
     <div 
     className={aboutusstyles.aboutwholecontainer}
     >
@@ -27,6 +30,7 @@ function About() {
       >
        <Aboutcarousel></Aboutcarousel>
       </div>
+    </div>
     </div>
   )
 }
