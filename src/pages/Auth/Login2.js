@@ -46,6 +46,9 @@ function Login2() {
                             <u>Forgot password?</u>
                         </div>
                     </div>
+                    <div className={login.redirectRegister}>
+                        <a href="/register">Don't have an account? Register here</a>
+                    </div>
                     <button
                         type="submit"
                         // onClick={handledefault}

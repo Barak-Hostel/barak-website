@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 .fullcontainer {
-    height: 65%;
+    height: 100%;
     max-width: min(900px, 65%);
     display: flex;
     flex-direction: row;
     box-shadow: 0px 0px 16px 3px #00000014;
     min-height: 500px;
-    margin: 140px auto 75px;
+    margin: 225px auto 75px;
 }
 
 .leftcontainer {
@@ -95,6 +95,16 @@
     justify-content: center;
     min-width: 150px;
 }
+
+.redirectRegister{
+    margin-top: 15px;
+    margin-bottom: 27px;
+}
+.redirectRegister a, a:visited, a:hover, a:active {
+    color: inherit;
+    margin:8px; 
+}
+
 
 @media only screen and (max-width: 850px) {
     .bottom {

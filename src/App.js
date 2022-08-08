@@ -7,6 +7,7 @@ import Footer from "./parts/Footer/Footer";
 import Facilities from "./pages/Facilities/Facilities";
 import SlotBooking from "./pages/SlotBooking/SlotBooking";
 import Contact from "./pages/Contact/Contact";
+import Register from "./pages/Auth/Register";
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login2 />} />
+                    <Route path="/register" element={<Register />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/facilities" element={<Facilities />} />
                     <Route path="/slot-booking" element={<SlotBooking />} />
