@@ -119,18 +119,19 @@ function Merchandise() {
         );
     };
 
-    const DisplaySecond = () => {
-        return (
-            <>
-                <p className={merchandise.confirmedup}>Booking confirmed</p>
-                <p className={merchandise.confirmeddown}>
-                    Your booking confirmation has been sent to your email.
-                </p>
-            </>
-        );
-    };
+    // const DisplaySecond = () => {
+    //     return (
+    //         <>
+    //             <p className={merchandise.confirmedup}>Booking confirmed</p>
+    //             <p className={merchandise.confirmeddown}>
+    //                 Your booking confirmation has been sent to your email.
+    //             </p>
+    //         </>
+    //     );
+    // };
 
-    const [display, setdisplay] = useState(DisplayFirst);
+    const [display] = useState(DisplayFirst);
+    // setdisplay(DisplayFirst); 
 
     return (
         <div className={merchandise.fullcontainer}>
