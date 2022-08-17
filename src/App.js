@@ -8,6 +8,7 @@ import Facilities from "./pages/Facilities/Facilities";
 import SlotBooking from "./pages/SlotBooking/SlotBooking";
 import Contact from "./pages/Contact/Contact";
 import Register from "./pages/Auth/Register";
+import Merchandise from "./pages/Merchandise/Merchandise";
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/facilities" element={<Facilities />} />
                     <Route path="/slot-booking" element={<SlotBooking />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/merchandise" element={<Merchandise />} />
                 </Routes>
                 <Footer />
             </Router>

@@ -35,6 +35,10 @@ const Header = () => {
                     {" "}
                     <Link to="/">Contact</Link>
                 </li>
+                <li>
+                    {" "}
+                    <Link to="/merchandise">Merchandise</Link>
+                </li>
                 <li className={Nav.Login2}>
                     <Link to="/login">Login</Link>
                 </li>
