@@ -27,13 +27,10 @@ const Header = () => {
                     {" "}
                     <Link to="/gallery">Gallery</Link>
                 </li>
+
                 <li>
                     {" "}
-                    <Link to="/">Hostel map</Link>
-                </li>
-                <li>
-                    {" "}
-                    <Link to="/">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
                 <li>
                     {" "}
