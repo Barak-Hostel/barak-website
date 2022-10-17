@@ -4,7 +4,16 @@ import slideStyle from "./slider.module.css";
 
 import leftAr from "./leftA.svg";
 import rightAr from "./rightA.svg";
-import im from "./im.png";
+
+import kartikverma from "./kartikverma.jpg";
+import ShubhamYadav from "./ShubhamYadav.jpg";
+import shivarapolu from "./shivarapolu.jpg";
+import SiddhantJoshi from "./SiddhantJoshi.jpg";
+import DivyanshuTiwari from "./DivyanshuTiwari.jpg";
+import SDas from "./SDas.jpeg";
+import KunalGoyal from "./KunalGoyal.jpg";
+import priteshverma from "./priteshverma.jpg";
+
 // const img1 =
 //     "https://images.unsplash.com/photo-1542137722061-efd1cbdf156c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60";
 // const img2 =
@@ -16,17 +25,35 @@ import im from "./im.png";
 // const img5 =
 //     "https://images.unsplash.com/photo-1649452815098-687edf2fd7fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
 
-const images = [im, im, im, im, im, im, im];
+const images = [
+    kartikverma,
+    ShubhamYadav,
+    shivarapolu,
+    SiddhantJoshi,
+    DivyanshuTiwari,
+    SDas,
+    KunalGoyal,
+    priteshverma,
+];
+const post = [
+    "General Secretary",
+    "Technical Secretary",
+    "Joint Technical Secretary",
+    "Sports Secretary",
+    "Joint Sports Secretary",
+    "Joint Cultural Secretary",
+    "Joint Mess Convener",
+    "Joint Maintainance Secretary",
+];
 const names = [
-    "Warden",
-    "Caretaker",
-    "Secy",
-    "Sports Sec",
-    "Caretaker",
-    "Caretaker",
-    "Caretaker",
-    "Caretaker",
-    "Caretaker",
+    "Kartik Verma",
+    "Shubham Yadav",
+    "Rapolu Shiva Prasad",
+    "Siddhant Joshi",
+    "Divyanshu Kumar Tiwari",
+    "Shubhradeep Das",
+    "Kunal Goyal",
+    "Pritesh Kumar Verma",
 ];
 
 export default function Hmc() {
@@ -92,7 +119,8 @@ export default function Hmc() {
                 {images.map((img, index) => (
                     <div className={slideStyle.slide} key={img}>
                         <img src={img} alt="IMG" />
-                        {names[index]}
+                        {post[index]}
+                        <p>{names[index]}</p>
                     </div>
                 ))}{" "}
             </Slider>
