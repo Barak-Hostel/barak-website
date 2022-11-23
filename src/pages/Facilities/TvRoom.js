@@ -5,12 +5,12 @@ const Tv = () => {
         <div className={tv.content}>
             <h1 className={tv.header}>TV Room</h1>
             <p>
-                Barak is the 7th hostel in the IITG fraternity and derives its
-                name from the River Barak which is a major river in
-                north-eastern India and is a part of the Surma-Meghna River
-                System. It rises in the Manipur hills and enters the plains near
-                Lakhipur. The two time General Championship Winner hostel brings
-                a cheerful environment to all its boarders.
+            This place provides some relief from the monotonous academic routine of submitting assignments
+             a minute before deadlines and the one-nighter preparations before exams. We have a Large LED 
+             TV wherein you can watch FIFA tournaments, IPL, World Cup, and all other sports, cheer for your
+              favorite teams, and create euphoria. You can also binge-watch your favorite shows while you snack
+               on something you brought from the canteen!
+
             </p>
         </div>
     );

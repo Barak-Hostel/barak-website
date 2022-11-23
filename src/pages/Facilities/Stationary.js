@@ -5,12 +5,12 @@ const St = () => {
         <div className={st.content}>
             <h1 className={st.header}>Stationary</h1>
             <p>
-                Barak is the 7th hostel in the IITG fraternity and derives its
-                name from the River Barak which is a major river in
-                north-eastern India and is a part of the Surma-Meghna River
-                System. It rises in the Manipur hills and enters the plains near
-                Lakhipur. The two time General Championship Winner hostel brings
-                a cheerful environment to all its boarders.
+            From a ballpoint pen to soaps, toothpaste to deodorant, registars for your notes 
+            to printing your required documents….you name it, we have it. Barak stationary is 
+            equipped with all the basic amenities a student needs in daily tasks. It ranges from 
+            academic purpose products like pencils, pens, geometry boxes, color prints, and xerox 
+            to products one needs for grooming or carrying out his day-to-day activities. 
+            Online payments are more encouraged than cash due to the widespread use of digital transactions.
             </p>
         </div>
     );

@@ -5,12 +5,13 @@ const mess = () => {
         <div className={Mess.content}>
             <h1 className={Mess.header}>Barak Mess</h1>
             <p>
-                Barak is the 7th hostel in the IITG fraternity and derives its
-                name from the River Barak which is a major river in
-                north-eastern India and is a part of the Surma-Meghna River
-                System. It rises in the Manipur hills and enters the plains near
-                Lakhipur. The two time General Championship Winner hostel brings
-                a cheerful environment to all its boarders.
+                 We have our own operating Mess, which provides all three meals in a day. 
+                 Boarders have access to a variety of food items over a week that keeps their 
+                 health and well-being in check and is a delicacy to taste. All the possible loopholes, 
+                 such as the food quality deterioration, lack of cleanliness, and some unexpected end-moment menu changes, 
+                 are mainly tackled by our elected Mess Convenor and Joint Mess Convenor. Mess feedback is taken at regular 
+                 intervals through a form accessible by QR codes pasted at the dining tables for easy access. 
+                 Students and other campus residents who aren't Barak boarders can access our Mess by paying a subscription.
             </p>
             <div className={Mess.buton}>
                 <div className={Mess.bookButtom}>

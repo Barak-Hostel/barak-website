@@ -1,6 +1,9 @@
 // import  Axios from "axios";
 import React, { useState } from "react";
 import merchandise from "./Merchandise.module.css"
+import Logo2 from "./LOGO2.jpg";
+
+const MERCHANDISE_AMOUNT=400; // in Rs
 
 function Merchandise() {
     
@@ -12,16 +15,63 @@ function Merchandise() {
         nameOnTshirt:"",
         numberOnTshirt:"",
         shirtSize:"",
-        tshirtFormat:""
     }; 
     const handleChange=(e)=>{
-        data[e.target.id]=e.target.value
+        data[e.target.id]=e.target.value;
         // console.log(data)
     }
-    const handleSubmit=(e)=>{
+    
+    const loadScript=(src)=>{
+        return new Promise((resolve)=>{
+            const script=document.createElement('script')
+            script.src=src;  
+            console.log(script); 
+            script.onload=()=>{
+                resolve(true)
+            }
+            script.onerror=()=>{
+                resolve(false); 
+            }
+            document.body.appendChild(script); 
+        })
+    }
+    const handleOrder=async (amount)=>{
+        const res=await loadScript('https://checkout.razorpay.com/v1/checkout.js'); 
+        if(!res){
+            alert("You are offline, failed to complete order");
+            return;  
+        }    
+        const options={
+            key:"rzp_test_3uyfJIMonL5dbe",
+
+            currency:"INR",
+            amount:amount*100, 
+            name:"BARAK HOSTEL",
+            description:"Thank you for purchasing, JAI BARAK!",
+            image:Logo2,
+            handler : function(res){
+                alert("Payment Succesful"); 
+                // backend post request using axios
+            },
+            prefill:{
+                name:"Barak"
+            }
+        };
+        // if(res.razorpay_payment_id){
+            // backend post request using axios
+        // }
+        const paymentObject=new window.Razorpay(options)
+        paymentObject.open(); 
 
     }
-
+    const handleSubmit=(e)=>{
+        console.log("data",data); 
+        console.log("Handle Submit called");
+        e.preventDefault();
+        console.log("prevent default passed & calling handleorder"); 
+        handleOrder(MERCHANDISE_AMOUNT);
+        console.log("End of control ")
+    }
     const DisplayFirst = () => {
       
         
@@ -32,7 +82,7 @@ function Merchandise() {
 
                 <form
                     className={merchandise.form}
-                    method="POST"
+                    method=""
                     action=""
                     onSubmit={handleSubmit}
                 >
@@ -42,14 +92,15 @@ function Merchandise() {
                         type="text"
                         id="name"
                         onChange={(e)=>handleChange(e)}
-                        placeholder="name"
+                        placeholder="Name"
                         required
                     ></input>
                     <input
                         name="rollNo"
                         className={merchandise.inputbox}
-                        type="number"
+                        type="string"
                         id="rollNo"
+                        min={0}
                         onChange={(e)=>handleChange(e)}
                         placeholder="roll number"
                         required
@@ -87,10 +138,10 @@ function Merchandise() {
                         type="text"
                         id="numberOnTshirt"
                         onChange={(e)=>handleChange(e)}
-                        placeholder="Number on Tshirt"
+                        placeholder="Number on T-shirt"
                         required
                     ></input>
-                    <input
+                    {/* <input
                         name="shirtSize"
                         className={merchandise.inputbox}
                         type="number"
@@ -99,7 +150,21 @@ function Merchandise() {
                         placeholder="Size"
                         min={1}
                         required
-                    ></input>
+                    ></input> */}
+                    {/* <label for="shirtSize"> Shirt Size </label>   */}
+                    <select id="shirtSize"  onChange={(e)=>handleChange(e)}>  
+                    <option value = "NULL"> Select shirt size   
+                    </option>  
+                    <option value = "S"> S   
+                    </option>  
+                    <option value = "M"> M   
+                    </option>  
+                    <option value = "XL"> XL  
+                    </option>  
+                    <option value = "XXL"> XXL  
+                    </option>  
+                    </select>  
+
                     {/* <input
                         name="course"
                         className={merchandise.inputbox}
@@ -110,9 +175,9 @@ function Merchandise() {
                         required
                     ></input> */}
                     <button
-                        type="submit"
+                      type="submit"
                     >
-                        Pay Now
+                        Pay 400
                     </button>
                 </form>
             </div>
