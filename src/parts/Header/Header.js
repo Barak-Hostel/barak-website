@@ -27,18 +27,18 @@ const Header = () => {
                     {" "}
                     <Link to="/gallery">Gallery</Link>
                 </li>
-                <li>
+                {/* <li>
                     {" "}
                     <Link to="/">Hostel map</Link>
-                </li>
+                </li> */}
                 <li>
                     {" "}
                     <Link to="/">Contact</Link>
                 </li>
-                <li>
+                {/* <li>
                     {" "}
                     <Link to="/merchandise">Merchandise</Link>
-                </li>
+                </li> */}
                 <li className={Nav.Login2}>
                     <Link to="/login">Login</Link>
                 </li>

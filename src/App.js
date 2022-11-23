@@ -9,28 +9,31 @@ import SlotBooking from "./pages/SlotBooking/SlotBooking";
 import Contact from "./pages/Contact/Contact";
 import Register from "./pages/Auth/Register";
 import Merchandise from "./pages/Merchandise/Merchandise";
+import { AuthProvider } from "./context";
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
-        <div className="App">
-            <Router>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login2 />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/gallery" element={<Gallery />} />
-                    <Route path="/facilities" element={<Facilities />} />
-                    <Route path="/slot-booking" element={<SlotBooking />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/merchandise" element={<Merchandise />} />
-                </Routes>
-                <Footer />
-            </Router>
-        </div>
+        <AuthProvider>
+            <div className="App">
+                <Router>
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/login" element={<Login2 />} />
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/gallery" element={<Gallery />} />
+                        <Route path="/facilities" element={<Facilities />} />
+                        <Route path="/slot-booking" element={<SlotBooking />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/merchandise" element={<Merchandise />} />
+                    </Routes>
+                    <Footer />
+                </Router>
+            </div>
+        </AuthProvider>
     );
 }
 
