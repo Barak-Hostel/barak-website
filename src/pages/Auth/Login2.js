@@ -66,6 +66,7 @@ function Login2() {
                             </a>
                         </div>
                         <button
+                            className={login.submitBtn}
                             type="submit"
                             // onClick={handledefault}
                         >

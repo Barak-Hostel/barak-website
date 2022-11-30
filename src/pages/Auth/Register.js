@@ -24,12 +24,10 @@ function Register() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(data);
-    
-        if(registerf(data)){
-               
-        }else{
+
+        if (registerf(data)) {
+        } else {
             alert("Please enter correct details");
-        
         }
         setdisplay(DisplaySecond);
         //     console.log(data);
@@ -145,9 +143,9 @@ function Register() {
     const DisplaySecond = () => {
         return (
             <>
-                <p className={register.confirmedup}>Booking confirmed</p>
+                <p className={register.confirmedup}>Registration confirmed</p>
                 <p className={register.confirmeddown}>
-                    Your booking confirmation has been sent to your email.
+                    Your registration confirmation has been sent to your email.
                 </p>
             </>
         );
