@@ -30,11 +30,11 @@
     height: 100%;
 }
 #img1 {
-    background-image: url("football.jpg");
+    background-image: url("../Home/Events/images/heading.png");
     background-size: 100% 100%;
 }
 #img2 {
-    background-image: url("cricket.jpg");
+    background-image: url("../Home/Events/images/cricket.jpg");
     background-size: 100% 100%;
 }
 #img3 {
@@ -111,33 +111,68 @@
 }
 
 #football1 {
-    background-image: url("FootballGallery/image\ 42.jpg");
+    background-image: url("../Gallery/FootballGallery/footballi1.png");
     background-size: 100% 100%;
 }
 #football2 {
-    background-image: url("FootballGallery/image\ 47.jpg");
+    background-image: url("../Gallery/FootballGallery/footballi2.png");
     background-size: 100% 100%;
 }
 #football3 {
-    background-image: url("FootballGallery/image\ 70.jpg");
+    background-image: url("../Gallery/FootballGallery/footballi3.png");
     background-size: 100% 100%;
 }
-#football4 {
-    background-image: url("FootballGallery/image\ 72.jpg");
+#football8 {
+    background-image: url("../Gallery/FootballGallery/footballi4.png");
     background-size: 100% 100%;
 }
 #football5 {
-    background-image: url("FootballGallery/image\ 73.jpg");
+    background-image: url("../Gallery/FootballGallery/footballi5.png");
     background-size: 100% 100%;
 }
 #football6 {
-    background-image: url("FootballGallery/image\ 69.jpg");
+    background-image: url("../Gallery/FootballGallery/footballi6.png");
     background-size: 100% 100%;
+    max-width: 400px;
 }
 #football7 {
-    background-image: url("FootballGallery/image\ 71.jpg");
+    background-image: url("../Gallery/FootballGallery/footballi7.png");
+    background-size: 100% 100%;
+    max-width: 400px;
+}
+#football4 {
+    background-image: url("../Gallery/FootballGallery/footballi8.png");
+    background-size: 100% 100%;
+    max-width: 400px;
+}
+
+
+#cricketi1 {
+    background-image: url("../Gallery/CricketGallery/cricketi1.jpg");
     background-size: 100% 100%;
 }
+#cricketi2 {
+    background-image: url("../Gallery/CricketGallery/cricketi2.jpg");
+    background-size: 100% 100%;
+}
+#cricketi3 {
+    background-image: url("../Gallery/CricketGallery/cricketi3.jpg");
+    background-size: 100% 100%;
+}
+#cricketi4 {
+    background-image: url("../Gallery/CricketGallery/cricketi4.jpg");
+    background-size: 100% 100%;
+}
+#cricketi5 {
+    background-image: url("../Gallery/CricketGallery/cricketi5.jpg");
+    background-size: 100% 100%;
+}
+#cricketi6 {
+    background-image: url("../Gallery/CricketGallery/cricketi6.jpg");
+    background-size: 100% 100%;
+    max-width: 400px;
+}
+
 .secondary_title {
     display: none;
 }
