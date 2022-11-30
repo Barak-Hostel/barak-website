@@ -18,7 +18,7 @@
 }
 .img {
     width: 50%;
-    background-image: url("Rectangle 43.jpg");
+    background-image: url("../Home/Carousel/images/main.png");
     background-size: cover;
 }
 .form_input {
