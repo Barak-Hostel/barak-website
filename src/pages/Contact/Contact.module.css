@@ -16,7 +16,7 @@
 
 .leftcontainer {
     width: 47%;
-    background-image: url("./Rectangle 43.jpg");
+    background-image: url("../Home/Aboutus/BarakPic3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -109,7 +109,7 @@
         min-height: 500px;
         width:100%;
         z-index: 1;
-        background-image: url("./Rectangle 43.jpg");
+        background-image: url("../Home/Aboutus/BarakPic3.jpg");
         background-size: cover;
         background-position: center; 
         filter: blur(3px);  

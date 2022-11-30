@@ -2,10 +2,10 @@ import React from "react";
 import "./Homefont.css";
 import Carosuel from "./Carousel/Carosuel";
 import Achievements from "./Achievements/Achievements";
-import About from "./About us/About.js";
+import About from "./Aboutus/About.js";
 import Events from "./Events/Events";
 import Hmc from "./HmcSlider/hmcSlider.js";
-import Alumni from "./Alumni/Alumni";
+// import Alumni from "./Alumni/Alumni";
 import ScrollToTop from "react-scroll-up";
 import scrolluparrow from "./scrolluparrow.svg"
 
@@ -18,7 +18,7 @@ const Home = () => {
       <Events />
       <Hmc />
       <Achievements />
-      <Alumni />
+      {/* <Alumni /> */}
       <ScrollToTop showUnder={560} duration={600} 
     style={
       {

@@ -16,13 +16,12 @@ const Events = () => {
         </div>
         <div className={events["column1"]}>
           <div className={events["subheading"]}>
-            Inter Hostel FootBall Tournament
+            Barak FootBall League
           </div>
           <div className={events["description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            fugiat maiores quas animi dolorem enim explicabo, tempore voluptas
-            mollitia laboriosam rem, culpa, rerum non soluta nesciunt in.
-            Perferendis, vel quae.
+            Barak football league is an initiative that was started to provide relief from the monotonous routine of academics during
+            their midterm breaks, wherein teams participate and compete against each other to win the Intra-Hostel Football cup.
+            It serves as a perfect medium to bridge the gap between boarders. 
           </div>
         </div>
       </div>
