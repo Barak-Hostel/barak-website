@@ -1,12 +1,12 @@
 import React from "react";
 import events from "./Events.module.css";
-import tt from "./images/tt.svg";
+import janmastami from "./images/janmastami.jpg";
 import chess from "./images/chess.svg";
-import music from "./images/music.svg";
-import heading from "./images/heading.svg";
+import cricket from "./images/cricket.jpg";
+import heading from "./images/heading.png";
 const Events = () => {
-  const images = [tt, chess, music];
-  const alts = ["tt", "chess", "music"];
+  const images = [janmastami, chess, cricket];
+  const alts = ["janmastami", "chess", "cricket"];
   return (
     <div className={events["main-container"]}>
       <div className={events["heading"]}>Events</div>

@@ -10,12 +10,12 @@ const Gallery = () => {
         const cricketGallery = () => {
             setBlock(ViewCricket);
         };
-        const chessGallery = () => {
-            setBlock(ViewChess);
-        };
-        const musicGallery = () => {
-            setBlock(ViewMusic);
-        };
+        // const chessGallery = () => {
+        //     setBlock(ViewChess);
+        // };
+        // const musicGallery = () => {
+        //     setBlock(ViewMusic);
+        // };
         return (
             <div className={styles.preview_container}>
                 <div className={styles.img_box} onClick={footballGallery}>
@@ -25,7 +25,7 @@ const Gallery = () => {
                             Football Tournament
                         </span>
                         <br></br>
-                        <span className={styles.img_title_year}>2021</span>
+                        <span className={styles.img_title_year}>2022</span>
                     </div>
                     <div className={styles.secondary_title}>
                         <span className={styles.img_title_text}>
@@ -41,7 +41,7 @@ const Gallery = () => {
                             Cricket Tournament
                         </span>
                         <br></br>
-                        <span className={styles.img_title_year}>2021</span>
+                        <span className={styles.img_title_year}>2022</span>
                     </div>
                     <div className={styles.img_preview} id={styles.img2}></div>
                     <div className={styles.secondary_title}>
@@ -52,7 +52,7 @@ const Gallery = () => {
                         <span className={styles.img_title_year}>2021</span>
                     </div>
                 </div>
-                <div className={styles.img_box} onClick={chessGallery}>
+                {/* <div className={styles.img_box} onClick={chessGallery}>
                     <div className={styles.img_preview} id={styles.img3}></div>
                     <div className={styles.img_title}>
                         <span className={styles.img_title_text}>
@@ -85,7 +85,7 @@ const Gallery = () => {
                         <br></br>
                         <span className={styles.img_title_year}>2021</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     };
@@ -98,7 +98,7 @@ const Gallery = () => {
             <div className={styles.gallery_container}>
                 <div className={styles.subheading}>
                     <div className={styles.back_btn} onClick={backButton}></div>
-                    Football Tournament-2021
+                    Football Tournament-2022
                 </div>
                 <div className={styles.gallery_content}>
                     <div
@@ -141,40 +141,65 @@ const Gallery = () => {
             <div className={styles.gallery_container}>
                 <div className={styles.subheading}>
                     <div className={styles.back_btn} onClick={backButton}></div>
-                    Cricket Tournament-2021
+                    Cricket Tournament-2022
                 </div>
-                <div className={styles.gallery_content}></div>
+                <div className={styles.gallery_content}>
+                    <div
+                        className={styles.small_images}
+                        id={styles.cricketi1}
+                    ></div>
+                    <div
+                        className={styles.small_images}
+                        id={styles.cricketi2}
+                    ></div>
+                    <div
+                        className={styles.small_images}
+                        id={styles.cricketi3}
+                    ></div>
+                    <div
+                        className={styles.mid_images}
+                        id={styles.cricketi4}
+                    ></div>
+                    <div
+                        className={styles.mid_images}
+                        id={styles.cricketi5}
+                    ></div>
+                    <div
+                        className={styles.large_images}
+                        id={styles.cricketi6}
+                    ></div>
+                </div>
             </div>
         );
     };
-    const ViewChess = () => {
-        const backButton = () => {
-            setBlock(Preview);
-        };
-        return (
-            <div className={styles.gallery_container}>
-                <div className={styles.subheading}>
-                    <div className={styles.back_btn} onClick={backButton}></div>
-                    Chess Tournament-2021
-                </div>
-                <div className={styles.gallery_content}></div>
-            </div>
-        );
-    };
-    const ViewMusic = () => {
-        const backButton = () => {
-            setBlock(Preview);
-        };
-        return (
-            <div className={styles.gallery_container}>
-                <div className={styles.subheading}>
-                    <div className={styles.back_btn} onClick={backButton}></div>
-                    Music Competition-2021
-                </div>
-                <div className={styles.gallery_content}></div>
-            </div>
-        );
-    };
+    // const ViewChess = () => {
+    //     const backButton = () => {
+    //         setBlock(Preview);
+    //     };
+    //     return (
+    //         <div className={styles.gallery_container}>
+    //             <div className={styles.subheading}>
+    //                 <div className={styles.back_btn} onClick={backButton}></div>
+    //                 Chess Tournament-2021
+    //             </div>
+    //             <div className={styles.gallery_content}></div>
+    //         </div>
+    //     );
+    // };
+    // const ViewMusic = () => {
+    //     const backButton = () => {
+    //         setBlock(Preview);
+    //     };
+    //     return (
+    //         <div className={styles.gallery_container}>
+    //             <div className={styles.subheading}>
+    //                 <div className={styles.back_btn} onClick={backButton}></div>
+    //                 Music Competition-2021
+    //             </div>
+    //             <div className={styles.gallery_content}></div>
+    //         </div>
+    //     );
+    // };
 
     const [block, setBlock] = useState(Preview);
 
